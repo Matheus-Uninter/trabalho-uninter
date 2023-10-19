@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portifólio - Matheus</title>
+</head>
+<body>
+<!-- Navbar -->
+
+		<nav class="navbar background"> 
+			<ul class="nav-list"> 
+				<li class="logomarca"><a href="index.html">Inicio</a></li>
+				<li><a href="Portifolio.html">Portifólio</a></li> 
+				<li><a href="Sobre.html">Sobre</a></li> 
+				<li><a href="Clientes.html">Clientes</a></li> 
+				<li><a href="Contato.html">Contatos</a></li> 
+			</ul> 
+		</nav> 
+		
+<!-- Sessão de avaliações -->	
+	
+    <section id="testemunhos">
+        <div class="titulo-testemunho">
+            <span>Comentários</span>
+            <h4>Veja o que nossos clientes estão dizendo!</h4>
+        </div>
+        <div class="contêiner-caixa-testemunho">
+            <div class="caixa-testemunho">
+                <div class="topo-caixa">
+                    <div class="perfil">
+                        <div class="imagem-perfil">
+                            <img src="clientes\cliente-2.jpg" />
+                        </div>
+                        <div class="nome-usuario">
+                            <strong>Breno Silva ⭐⭐⭐⭐⭐</strong>
+                            <span>@brenosilva834</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario-cliente">
+                    <p>Atendeu a todas as minhas necessidades e expectativas. Além disso, o suporte técnico prestado pelo Matheus e sua equipe foi rápido e útil sempre que precisei de assistência.</p>
+                </div>
+            </div>
+            <div class="caixa-testemunho">
+                <div class="topo-caixa">
+                    <div class="perfil">
+                        <div class="imagem-perfil">
+                            <img src="clientes\cliente-1.jpg" />
+                        </div>
+                        <div class "nome-usuario">
+                            <strong>Natália ⭐⭐⭐⭐⭐<br></strong>
+                            <span>@Nat23</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario-cliente">
+                    <p>Sem dúvida, recomendaria o serviço prestado a amigos e familiares!"</p>
+                </div>
+            </div>
+            <div class="caixa-testemunho">
+                <div class="topo-caixa">
+                    <div class="perfil">
+                        <div class="imagem-perfil">
+                            <img src="clientes\cliente-3.jpg" />
+                        </div>
+                        <div class="nome-usuario">
+                            <strong>Alexander ⭐⭐⭐⭐⭐</strong>
+                            <span>@Ale</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comentario-cliente">
+                    <p>A interface é intuitiva e fácil de navegar, tornando a minha experiência incrivelmente boa. As funcionalidades são poderosas e atenderam às minhas necessidades de forma eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- Estilo CSS do site -->
+
+<style>
+
+*{
+margin: 0px;
+padding: 0px;
+font-family: poppins;
+box-sizing: border-box;
+}
+a{
+text-decoration: none;
+}
+#testemunhos{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width:100%;
+}
+.titulo-testemunho{
+letter-spacing: 1px;
+margin: 30px 0px;
+padding: 10px 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+ 
+.titulo-testemunho span{
+font-size: 1.3rem;
+color: #252525;
+margin-bottom: 10px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.contêiner-caixa-testemunho{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width:100%;
+}
+.caixa-testemunho{
+height: 255px;
+width:500px;
+box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+background-color: #ffffff;
+padding: 20px;
+margin: 15px;
+cursor: pointer;
+}
+.imagem-perfil{
+width:50px;
+height: 50px;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 10px;
+}
+.imagem-perfil img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+.perfil{
+display: flex;
+align-items: center;
+}
+.nome-usuario{
+display: flex;
+flex-direction: column;
+}
+.nome-usuario strong{
+color: #3d3d3d;
+font-size: 1.1rem;
+letter-spacing: 0.5px;
+}
+.nome-usuario span{
+color: #979797;
+font-size: 0.8rem;
+}
+.avaliações{
+color: #f9d71c;
+}
+.topo-caixa{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+.comentario-cliente p{
+font-size: 0.9rem;
+color: #4b4b4b;
+}
+.caixa-testemunho:hover{
+transform: translateY(-10px);
+transition: all ease 0.3s;
+}
+ 
+@media(max-width:1060px){
+.caixa-testemunho{
+width:45%;
+padding: 10px;
+}
+}
+@media(max-width:790px){
+.caixa-testemunho{
+width:100%;
+}
+.titulo-testemunho h1{
+font-size: 1.4rem;
+}
+}
+@media(max-width:340px){
+.topo-caixa{
+flex-wrap: wrap;
+margin-bottom: 10px;
+}
+.avaliações{
+margin-top: 10px;
+}
+::selection{
+color: #ffffff;
+background-color: #252525;
+}
+</style>
+	
+	
+	
+</html> 

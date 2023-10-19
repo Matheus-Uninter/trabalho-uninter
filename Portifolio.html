@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portifólio - Matheus</title>
+</head>
+<body> 
+<!-- Navbar -->
+
+		<nav class="navbar background"> 
+			<ul class="nav-list"> 
+				<li class="logomarca"><a href="index.html">Inicio</a></li>
+				<li><a href="Portifolio.html">Portifólio</a></li> 
+				<li><a href="Sobre.html">Sobre</a></li> 
+				<li><a href="Clientes.html">Clientes</a></li> 
+				<li><a href="Contato.html">Contatos</a></li> 
+			</ul> 
+		</nav> 
+<!-- Estilo CSS do site -->
+
+    <style>
+        body {
+		    font-family: 'Poppins', sans-serif;
+            display: flex !important;
+            justify-content: center !important; 
+            align-items: center !important;
+            height: 100vh !important;
+            margin: 0 !important;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image {
+            width: 59%; /* Para dar espaço entre as imagens */
+        }
+
+        .image img {
+			border-radius: 10px;
+            width: 76%;
+            height: 70%;
+            display: block;
+            margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        }
+
+        h2 {
+		    position: relative;
+		    right: -85px;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        p {
+		    position: relative;
+			right: -85px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<!-- Area dos projetos -->
+
+    <div class="image-container">
+        <div class="image">
+            <img src="port-1.jpg" alt="Imagem 1">
+            <h2>App de lanchonete - Python</h2>
+            <p>Um app de sistema de lanchonete, com sistema de pedidos e checkout.</p>
+			<p>Feito 100% em Python!</p>
+        </div>
+
+        <div class="image">
+            <img src="port-2.png" alt="Imagem 2">
+            <h2>Sistema de cofre - Java</h2>
+            <p>Onde é possível adicionar moedas, converte-las e fazer a listagem.</p>
+			<p>Feito 100% em Java!</p>
+        </div>
+    </div>
+	
+		
+	</body> 
+</html>
