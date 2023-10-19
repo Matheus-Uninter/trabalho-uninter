@@ -4,27 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Portifólio - Matheus</title>
-</head>
-<body> 
-<!-- Navbar -->
-
-		<nav class="navbar background"> 
-			<ul class="nav-list"> 
-				<li class="logomarca"><a href="index.html">Inicio</a></li>
-				<li><a href="Portifolio.html">Portifólio</a></li> 
-				<li><a href="Sobre.html">Sobre</a></li> 
-				<li><a href="Clientes.html">Clientes</a></li> 
-				<li><a href="contato.html">Contatos</a></li> 
-			</ul> 
-		</nav>
-<!-- Estilo CSS do site -->
-
-<head>
-    <title>Botão Personalizado com Texto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfólio - Matheus</title>
     <style>
         body {
+		font-family: 'Poppins', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,7 +18,27 @@
         }
 
         .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contact-section {
+            flex: 1;
             text-align: center;
+        }
+
+        .contact-form {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .title {
@@ -50,6 +54,7 @@
         }
 
         .centered-button {
+		font-family: 'Poppins', sans-serif;
             background-color: #3498db;
             color: #fff;
             padding: 10px 20px;
@@ -62,20 +67,77 @@
         .centered-button:hover {
             background-color: #2980b9;
         }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+		font-family: 'Poppins', sans-serif;
+background-color: #e2e5e7;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+        }
+
+        input[type="submit"] {
+		font-family: 'Poppins', sans-serif;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+		font-family: 'Poppins', sans-serif;
+            background-color: #2980b9;
+        }
     </style>
 </head>
 <body>
-<!-- Sessão de contato -->
-    <div class="container">
-        <div class="title">Entre em contato conosco e peça seu orçamento</div>
-        <div class="description">Telefone: (11)998879222 <br> Email: matheusaraujo9999@outlook.com <br> WhatsApp:</div>
+    <!-- Navbar -->
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li class="logomarca"><a href="index.html">Início</a></li>
+            <li><a href="Portifolio.html">Portfólio</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="Clientes.html">Clientes</a></li>
+            <li><a href="Contato.html">Contatos</a></li>
+        </ul>
+    </nav>
 
-        <a href="https://wa.me/5511998879222?text=Gostaria+de+fazer+uma+cota%C3%A7%C3%A3o" target="_blank">
-            <button class="centered-button">Clique aqui para entrar em contato pelo WhatsApp</button>
-        </a>
-    </div>
+    <!-- Sessão de contato -->
+    <div class="container">
+        <div class="contact-section">
+            <div class="title">Entre em contato conosco e peça seu orçamento</div>
+			<input type="text" value="Nome">
+			<input type="text" value="Email">
+			<input type="text" value="Mensagem">
+            <a href="https://www.exemplo.com" target="_blank">
+                <button class="centered-button">Enviar</button>
+            </a>
+        </div>
+
 </body>
-		
-		
-	</body> 
 </html>
