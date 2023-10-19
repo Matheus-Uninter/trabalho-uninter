@@ -1,0 +1,237 @@
+* { 
+margin: 0; 
+
+	padding: 0; 
+} 
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #ffffff !important;
+    	max-width:1920px;
+    	margin:0 auto;
+	overflow-x:hidden;
+}
+
+.navbar { 
+	font-family: 'Poppins', sans-serif;
+	display: flex; 
+	position: fixed; 
+	align-items: center; 
+	justify-content: center; 
+	top: 0px; 
+	width: 100%;
+	cursor: pointer; 
+} 
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .menu-icon:before {
+    content: "\2630";
+  }
+  
+  #menu-toggle:checked ~ .nav-list {
+    display: block;
+  }
+}
+
+
+/*EDITAR IMAGEM EM DESTAQUE*/
+
+.imagem-destaque {
+  width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+}
+
+#imagem-destaque {
+	width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 100px;
+}
+
+
+a{
+color: #ff4f5b;	
+}
+
+
+.header-text {
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  z-index: 1;
+  font-size: 36px;
+  white-space: normal;
+  line-height: 1.0
+}
+
+.nav-list {  
+	display: flex; 
+	background-color: white;
+} 
+
+.nav-list li { 
+	list-style: none; 
+	padding: 26px 30px; 
+} 
+
+.nav-list li a { 
+	text-decoration: none; 
+	color: black; 
+} 
+
+.nav-list li a:hover { 
+	color: black; 
+} 
+
+.rightNav { 
+	width: 50%; 
+	text-align: right; 
+} 
+
+
+/*EDITAR FORMULÁRIO*/
+
+.titulo-formulario {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 999;
+}
+
+.formulario-contato {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  z-index: 999;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.background { 
+	background-color: white;
+	background-blend-mode: darken; 
+	background-size: cover; 
+} 
+
+
+.logomarca {
+  float: left;
+  margin-right: 740px;
+}
+
+
+.coluna {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    font-family: "Open Sans", "Noto Sans", HelveticaNeueCyr, Helvetica, sans-serif;
+    line-height: 1.68em;
+    color: #333333;
+    background: #fafafa;
+}
+
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+section.t-bq-section {
+    padding: 30px;
+    margin-bottom: 60px;
+	margin-top: 150px;
+	position: relative;
+	z-index: -1;
+}
+
+.t-bq-wrapper.t-bq-wrapper-boxed {
+    max-width: 576px;
+    margin: 0 auto;
+}
+
+.t-bq-wrapper.t-bq-wrapper-fullwidth {
+    max-width: 100%;
+}
+
+.t-bq-wrapper .t-bq-quote {
+    padding: 20px;
+}
+
+/* Estilo para telas grandes (desktops, 992px e acima) */
+@media only screen and (min-width: 992px) { ... }
+
+/* Estilo para telas médias (tablets, 768px e acima) */
+@media only screen and (min-width: 768px) { ... }
+
+/* Estilo para telas pequenas (landscape phones, 576px e acima) */
+@media only screen and (min-width: 576px) { ... }
+
+/* Estilo para telas muito pequenas (phones, menor que 576px) */
+@media only screen and (max-width: 575.98px) { ... }
